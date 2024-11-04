@@ -1,0 +1,8 @@
+.profile-picture {
+    width: 80px;
+    border-radius: 50%;
+    /* border: 5px solid green; */
+    float: left;
+    position:relative; bottom:18px;
+    position:relative; left:10px;
+}

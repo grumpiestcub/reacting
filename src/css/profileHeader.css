@@ -1,0 +1,10 @@
+.profile-header {
+    /* padding: 100px; */
+    background-color: #FFD5C2;
+    border-radius: 20%;
+    width: 90%;
+    /* border: 5px solid green; */
+    display: inline-block;
+    margin: auto;
+    /* padding: 10px; */
+}

@@ -3,6 +3,8 @@ import color2 from '/src/assets/color-images/color2.jpg'
 import color3 from '/src/assets/color-images/color3.jpg'
 import color4 from '/src/assets/color-images/color4.jpg'
 
+// unable to use objects, needs to be array?????
+
 function ColorPhotos() {
     // or is this the issue?
     const colorImages = [

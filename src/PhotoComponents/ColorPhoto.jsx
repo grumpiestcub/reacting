@@ -3,26 +3,28 @@ import color2 from '/src/assets/color-images/color2.jpg'
 import color3 from '/src/assets/color-images/color3.jpg'
 import color4 from '/src/assets/color-images/color4.jpg'
 
-// unable to use objects, needs to be array?????
+
+
 
 function ColorPhotos() {
     // or is this the issue?
-    const colorImages = [
-        {color1},
-        {color2},
-        {color3},
-        {color4},
-    ]
+    // const colorImages = [
+    //     {color1},
+    //     {color2},
+    //     {color3},
+    //     {color4},
+    // ]
+const colorImages = [color1, color2, color3, color4]
+
  return (
     <>
     <div>
-        {/* is this the issue?  */}
-     {colorImages}
+        {colorImages.map((img)=>  
+            <img src={img} />
+        )}
     </div>
     </>
  )
 }
-
-
 
 export default ColorPhotos

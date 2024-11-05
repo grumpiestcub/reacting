@@ -7,13 +7,6 @@ import color4 from '/src/assets/color-images/color4.jpg'
 
 
 function ColorPhotos() {
-    // or is this the issue?
-    // const colorImages = [
-    //     {color1},
-    //     {color2},
-    //     {color3},
-    //     {color4},
-    // ]
 const colorImages = [color1, color2, color3, color4]
 
  return (

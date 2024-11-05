@@ -11,7 +11,7 @@ const colorImages = [color1, color2, color3, color4]
 
  return (
     <>
-    <div>
+    <div className='color-photos'>
         {colorImages.map((img)=>  
             <img src={img} />
         )}

@@ -7,6 +7,10 @@
     display: none;
 }
 
-.bw-photos {
+.bw-photos-thumb {
     border: solid green ;
+}
+
+.bw-photos-full {
+    display: none;
 }

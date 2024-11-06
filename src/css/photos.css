@@ -1,3 +1,12 @@
-.color-photos {
+.color-photos-thumb {
+    border: solid green ;
+}
+
+/*need to make sure to figure out how to display these when clicked, with exit button*/
+.color-photos-full {
+    display: none;
+}
+
+.bw-photos {
     border: solid green ;
 }

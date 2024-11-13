@@ -2,17 +2,20 @@
     border: solid green ;
 }
 
-/*need to make sure to figure out how to display these when clicked, with exit button*/
-.bw-photos-full {
-    display: none;
-}
-
 .bw-photos-thumb {
     border: solid green ;
 }
 
-.thumbnail {
-    width: 150px;
+.color-thumbnail {
+    padding: 10px;
+    max-width: 200px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.bw-thumbnail {
+    padding: 10px;
+    max-width: 200px;
     cursor: pointer;
     margin: 5px;
 }

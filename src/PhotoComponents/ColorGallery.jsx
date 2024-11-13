@@ -42,7 +42,7 @@ function ColorGallery() {
             key={index}
             src={img}
             alt={'Thumbnail ${index + 1}'}
-            className="thumbnail"
+            className="color-thumbnail"
             onClick={() => openModal(colorImages[index])}
             />
         ))}

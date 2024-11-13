@@ -9,32 +9,54 @@ import color3Thumb from '/src/assets/color-images/color3thumb.jpg'
 import color4Thumb from '/src/assets/color-images/color4thumb.jpg'
 import '/src/css/photos.css'
 
-// want to make this a gallery of some sort that cycles through the images, 
-// should be able to click on them and make them full screen,
-// may need to do more than some css for this. 
+{/*
+isModalOpen = controls viz of modal
+selectedImage = stores the url of the selected full size
+openModal = takes image url as param from colorImages, sets it as selectedImage, then opens
+closeModal = hiding again and clearing selectedImage 
+onClick calls openModal with the image clicked on from ColorImages
+*/}
 
 const colorThumbs = [color1Thumb, color2Thumb, color3Thumb, color4Thumb]
 const colorImages = [color1, color2, color3, color4]
 
-function Gallery() {
-    
-}
+function ColorGallery() {
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState('');
 
-function ColorPhotos() {
+    const openModal = img => {
+        setSelectedImage(img);
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalOpen(false);
+        setSelectedImage('');
+    }
+
  return (
-    <>
+    <div>
     <div className='color-photos-thumb'>
-        {colorThumbs.map((img)=>  
-            <img src={img} />
+        {colorThumbs.map((img, index)=> (
+            <img 
+            key={index}
+            src={img}
+            alt={'Thumbnail ${index + 1}'}
+            className="thumbnail"
+            onClick={() => openModal(colorImages[index])}
+            />
+        ))}
+    </div>
+    <div>
+        {isModalOpen && (
+            <div className='modal' onClick={closeModal}>
+                <span className='close-button' onClick={closeModal}>x</span>
+                <img className='modal-content' src={selectedImage} alt='Full Size' />
+            </div>
         )}
     </div>
-    <div className ='color-photos-full'>
-        {colorImages.map((img)=>
-            <img src={img} />
-        )}
     </div>
-    </>
  )
 }
 
-export default ColorPhotos
+export default ColorGallery

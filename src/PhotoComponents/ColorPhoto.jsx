@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import color1 from '/src/assets/color-images/color1.jpg'
 import color2 from '/src/assets/color-images/color2.jpg'
 import color3 from '/src/assets/color-images/color3.jpg'
@@ -12,9 +13,14 @@ import '/src/css/photos.css'
 // should be able to click on them and make them full screen,
 // may need to do more than some css for this. 
 
-function ColorPhotos() {
 const colorThumbs = [color1Thumb, color2Thumb, color3Thumb, color4Thumb]
 const colorImages = [color1, color2, color3, color4]
+
+function Gallery() {
+    
+}
+
+function ColorPhotos() {
  return (
     <>
     <div className='color-photos-thumb'>

@@ -10,8 +10,8 @@ function MusicPlayer () {
     const audioRef = useRef(null);
   
     const songs = [
-        { title: "beat1", url:beat1 },
-        { title: "beat2", url:beat2}
+        {title: "beat1", url:beat1},
+        {title: "beat2", url:beat2}
     ];
 
     const [currentSongIndex, setCurrentSongIndex] = useState(0);

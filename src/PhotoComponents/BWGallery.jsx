@@ -11,9 +11,12 @@ import blackWhite4Thumb from '/src/assets/b&w-images/bw4thumb.jpg'
 const bwImages = [blackWhite1, blackWhite2, blackWhite3, blackWhite4]
 const bwThumbs = [blackWhite1Thumb, blackWhite2Thumb, blackWhite3Thumb, blackWhite4Thumb]
 
+// want to go over this with christian and make sure i understand what's happening here. I think I do. 
 
 function BWGallery() {
+    //sets state to false for closed modal, when open this state is true
     const [isModalOpen, setModalOpen] = useState(false);
+    //is this using another instance of useState? seems like it just stores/displays the img info
     const [selectedImage, setSelectedImage] = useState('');
 
     const openModal = img => {

@@ -1,9 +1,11 @@
 .color-photos-thumb {
-    border: solid green ;
+    border: solid maroon ;
+    padding: 10px;
 }
 
 .bw-photos-thumb {
-    border: solid green ;
+    border: solid purple ;
+    padding: 10px;
 }
 
 .color-thumbnail {

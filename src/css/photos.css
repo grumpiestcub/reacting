@@ -3,11 +3,6 @@
     Looks bad, need to fix
 */
 
-/* .color-photos-thumb {
-    border: solid maroon ;
-    padding: 10px;
-    max-width: 500px;
-} */
 
 .color-photos-thumb {
     display: flex;

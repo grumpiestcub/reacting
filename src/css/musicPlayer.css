@@ -1,8 +1,39 @@
 button {
-    display:inline;
+    display: flex;
     height:10%;
     width:10%;
     justify-content:center;
     align-items:center;
 }
 
+.music-player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.beats-title {
+margin-top: 50px;
+}
+
+.play-pause-button {
+    color: white;
+    background-color: #000000;
+}
+
+.next-track-button {
+    color: white;
+    background-color: #000000;
+}

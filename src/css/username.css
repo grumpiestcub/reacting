@@ -1,5 +1,18 @@
 #username {
+    display: inline;
     font-family: monospace;
-    /* border: 5px solid green; */
     position:relative; left:100px;
+}
+
+.cursor {
+    width: 2px;
+    height: 1em;
+    background-color: black;
+    animation: blink 1s infinite;
+    position:relative; left:195px; bottom: 16px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
 }

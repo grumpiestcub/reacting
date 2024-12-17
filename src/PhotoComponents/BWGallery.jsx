@@ -31,6 +31,7 @@ function BWGallery() {
 
  return (
     <div>
+    <p>black & white</p>
     <div className='bw-photos-thumb'>
         {bwThumbs.map((img, index)=> (
             <img 

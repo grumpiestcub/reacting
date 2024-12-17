@@ -4,6 +4,7 @@ function Username() {
     return (
         <>
         <p id='username'>grumpiestcub</p>
+        <div className='cursor'></div>
         </>
     )
 }

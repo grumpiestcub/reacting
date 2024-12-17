@@ -5,3 +5,16 @@ p {
 #bio {
  position:relative; left:80px;
 }
+
+body {
+    background: #c8645b;
+    background: linear-gradient(135deg, #c8645b 0%, #1f3740 100%);
+    /* background: -moz-linear-gradient(135deg, #c8645b 0%, #1f3740 100%);
+    background: -webkit-linear-gradient(135deg, #c8645b 0%, #1f3740 100%); */
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}

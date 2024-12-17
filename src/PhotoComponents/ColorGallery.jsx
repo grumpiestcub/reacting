@@ -36,6 +36,7 @@ function ColorGallery() {
 
  return (
     <div>
+        <p>color</p>
     <div className='color-photos-thumb'>
         {colorThumbs.map((img, index)=> (
             <img 

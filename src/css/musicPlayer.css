@@ -1,7 +1,5 @@
 button {
-    display: flex;
-    height:10%;
-    width:10%;
+    display: grid;
     justify-content:center;
     align-items:center;
 }
@@ -22,6 +20,25 @@ button {
 input[type="range"] {
     width: 100%;
     cursor: pointer;
+    accent-color: #1f3740;
+    background: #c8645b;
+    appearance: none;
+    height: 0.5rem;
+    width: 20rem;
+    border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    background-color: #c8645b;
+    height: 0.5rem;
+    width: 0.5rem;   
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: #1f3740;
+    height: 0.5rem;
 }
 
 .beats-title {
@@ -30,10 +47,13 @@ margin-top: 50px;
 
 .play-pause-button {
     color: white;
-    background-color: #000000;
+    background: none;
+    border-color: #ffffff;
 }
 
 .next-track-button {
     color: white;
     background-color: #000000;
-}
+    background: none;
+    border-color: #ffffff;
+} 

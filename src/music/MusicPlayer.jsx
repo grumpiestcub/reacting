@@ -17,7 +17,7 @@ function MusicPlayer () {
 
     const [currentSongIndex, setCurrentSongIndex] = useState(0);
   
-    const playPauseHandler = () => {
+    const playPause = () => {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
@@ -33,7 +33,7 @@ function MusicPlayer () {
       }
     };
 
-    function nextSongHandler() {
+    function nextSong() {
         setCurrentSongIndex((prev) => (prev + 1) % songs.length);
         setIsPlaying(false);
     }
@@ -52,15 +52,12 @@ function MusicPlayer () {
       <>
       <p className="beats-title">beats</p>
       <div className="music-player">
-      <button className="play-pause-button" onClick={playPauseHandler}>
-          {isPlaying ? "Pause" : "Play"}
-        </button> 
         <p>Currently Playing: {songs[currentSongIndex].title}</p>
         <audio
           ref={audioRef}
           src={songs[currentSongIndex].url}
           onTimeUpdate={onTimeUpdate}
-          onEnded={nextSongHandler}
+          onEnded={nextSong}
           onLoadedMetadata={onLoadedMetaData} // gets duration when loaded
         />
         <div className="progress-bar">
@@ -76,7 +73,14 @@ function MusicPlayer () {
             {Math.floor(currentTime)} / {Math.floor(duration)} seconds
           </p>
         </div>
-        <button className="next-track-button" onClick={nextSongHandler}>Next</button>
+        <div className="play-button">
+        <button className="play-pause-button" onClick={playPause}>
+          {isPlaying ? "pause" : "play"}
+        </button> 
+        </div>
+        <div className="next-button">
+          <button className="next-track-button" onClick={nextSong}>next</button>
+        </div>
         <div>
           {/* <p>Time: {Math.floor(currentTime)} s</p> */}
           {/* <p>Time: {currentTime} s</p> */}
